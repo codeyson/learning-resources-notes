@@ -155,3 +155,36 @@ Output Format:
 - Reuse successful prompts as templates.
 - Iterate and refine prompts based on results.
 
+# Chain vs Agent
+
+## Chain 
+
+  - Deterministic
+  - Low risk due to predictability
+
+## Agent
+
+  - Adaptive
+  - LLM decides what action to take
+  - Useful when the optimal sequence of steps is unknown
+
+# RAG vs Fine-tuning
+
+  ## RAG
+
+    1. Retrieve
+      - Generate embeddings
+      - Seach vector database
+      - Retrieve most similar documents
+    2. Augment
+      - combine input with top k and create augmented prompt
+    3. Generate
+      - Uses prompt to generate output
+
+  ## Fine-tuning
+
+    1. Supervised fine-tuning (Transfer Learning)
+    2. Reinforcement Learning from Human Feedback (RLHF)
+
+  // Use RAG to include factual knowledge.
+  // Use Finetuning when specializing in a new domain.
