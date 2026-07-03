@@ -188,3 +188,10 @@ Output Format:
 
   // Use RAG to include factual knowledge.
   // Use Finetuning when specializing in a new domain.
+
+# Testing 
+
+Step 1: Build a test set
+Step 2: Choose a metric
+
+![LLM dev cycle](image.png)
