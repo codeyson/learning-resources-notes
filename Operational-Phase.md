@@ -71,3 +71,43 @@ Strategy 3: Optimize the number of calls
     - Optimize (and limit) agent calls
     - Set quota and rate limits
     - Consider tasks which don't require LLMs
+
+# Governance and Security
+- Governance invovles policies, guidelines, and frameworks.
+- Security involves measure to prevernt: 
+    - Unauthorized access
+    - Data breaches
+
+## Access Control
+- Role Based Access Control (RBAC)
+- Zero trust security model
+
+**Threat:** Prompt Injection
+- Attackers manipulate input fields or prompts within an application
+
+Mitigation: 
+1. Assume prompt instructions can be overridden and contents uncovered
+2. Treat LLMS as an untrusted user
+3. Identify (and block) known adversarial prompts
+
+**Threat:** Output Manipulation
+- LLM's output can be leveraged in downstream attack
+
+Mitigation:
+1. Do not give application unnecessary authority/permissions.
+
+**Threat:** Denial-of-service
+- Users flood the LLMS application with request
+
+Mitigiation:
+1. Limit request rates
+2. Capping resource usage per request
+
+
+**Threat:** Data integrity and poisoning
+- inject false, misleading data into training set
+
+Mitigation:
+1. Use trusted sources
+2. Use filters
+3. Output censoring
