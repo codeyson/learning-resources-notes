@@ -194,4 +194,4 @@ Output Format:
 Step 1: Build a test set
 Step 2: Choose a metric
 
-![LLM dev cycle](image.png)
+![LLM dev cycle](img/image.png) 
